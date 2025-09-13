@@ -1,61 +1,61 @@
 import React from "react";
 export default function SocialMedia() {
-  return (
-    <ul className="flex items-center justify-center mt-8 space-x-3 sm:mt-12 lg:justify-end lg:mt-0">
-      <li>
-        <a
-          href="https://twitter.com/ZKLiquid"
-          target="_blank"
-          title="twitter"
-          className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full bg-black  "
-          rel="noopener noreferrer"
-        >
-          <svg
-            className="w-6 h-6 text-teal-500 "
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path>
-          </svg>
-        </a>
-      </li>
+	return (
+		<ul className="flex items-center justify-center mt-8 space-x-3 sm:mt-12 lg:justify-end lg:mt-0">
+			<li>
+				<a
+					href="https://x.com/Liquidsfi"
+					target="_blank"
+					title="twitter"
+					className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full bg-black  "
+					rel="noopener noreferrer"
+				>
+					<svg
+						className="w-6 h-6 text-teal-500 "
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="currentColor"
+					>
+						<path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path>
+					</svg>
+				</a>
+			</li>
 
-      <li>
-        <a
-          href="https://t.me/zkliquid"
-          target="_blank"
-          title="telegram"
-          className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full bg-black  "
-          rel="noopener noreferrer"
-        >
-          <svg
-            viewBox="0 0 16 16"
-            className=" text-teal-500  h-[20px] "
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clipPath="url(#clip0_25_160)">
-              <path
-                d="M15.2927 3.07658L13.1802 13.0391C13.0209 13.7422 12.6052 13.9172 12.0146 13.586L8.79585 11.2141L7.24273 12.7078C7.07085 12.8797 6.9271 13.0235 6.59585 13.0235L6.8271 9.74533L12.7927 4.35471C13.0521 4.12346 12.7365 3.99533 12.3896 4.22658L5.0146 8.87033L1.8396 7.87658C1.14898 7.66096 1.13648 7.18596 1.98335 6.85471L14.4021 2.07033C14.9771 1.85471 15.4802 2.19846 15.2927 3.07658Z"
-                fill="currentColor"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_25_160">
-                <rect
-                  width="14"
-                  height="16"
-                  fill="currentColor"
-                  transform="translate(1.33337)"
-                />
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-      </li>
+			<li>
+				<a
+					href="https://t.me/liquidsfi"
+					target="_blank"
+					title="telegram"
+					className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full bg-black  "
+					rel="noopener noreferrer"
+				>
+					<svg
+						viewBox="0 0 16 16"
+						className="text-teal-500  h-[20px]"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g clipPath="url(#clip0_25_160)">
+							<path
+								d="M15.2927 3.07658L13.1802 13.0391C13.0209 13.7422 12.6052 13.9172 12.0146 13.586L8.79585 11.2141L7.24273 12.7078C7.07085 12.8797 6.9271 13.0235 6.59585 13.0235L6.8271 9.74533L12.7927 4.35471C13.0521 4.12346 12.7365 3.99533 12.3896 4.22658L5.0146 8.87033L1.8396 7.87658C1.14898 7.66096 1.13648 7.18596 1.98335 6.85471L14.4021 2.07033C14.9771 1.85471 15.4802 2.19846 15.2927 3.07658Z"
+								fill="currentColor"
+							/>
+						</g>
+						<defs>
+							<clipPath id="clip0_25_160">
+								<rect
+									width="14"
+									height="16"
+									fill="currentColor"
+									transform="translate(1.33337)"
+								/>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</li>
 
-      {/* <li>
+			{/* <li>
         <a
           href="https://discord.gg/MAXzr3Za"
           target="_blank"
@@ -77,28 +77,28 @@ export default function SocialMedia() {
         </a>
       </li> */}
 
-      <li>
-        <a
-          href="https://github.com/zkliquid"
-          target="_blank"
-          title="github"
-          className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full bg-black"
-          rel="noopener noreferrer"
-        >
-          <svg
-            className="w-6 h-6 text-teal-500 "
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
-            ></path>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  );
+			<li>
+				<a
+					href="https://github.com/zkliquid"
+					target="_blank"
+					title="github"
+					className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full bg-black"
+					rel="noopener noreferrer"
+				>
+					<svg
+						className="w-6 h-6 text-teal-500 "
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="currentColor"
+					>
+						<path
+							fillRule="evenodd"
+							clipRule="evenodd"
+							d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+						></path>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	);
 }
