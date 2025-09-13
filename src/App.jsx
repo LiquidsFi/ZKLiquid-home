@@ -6,8 +6,8 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import PrivacyPolicy from "./pages/privacy-policy/PrivacyPolicy";
 import TermsOfService from "./pages/terms-of-service/TermsOfService";
-import ScrollToTop from "./components/common/ScrollToTop";
 import NotFound from "./components/Common/NotFound";
+import ScrollToTop from "./components/Common/ScrollToTop";
 
 const App = () => {
 	return (
