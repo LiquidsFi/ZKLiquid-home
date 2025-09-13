@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import PrivacyPolicy from "./pages/privacy-policy/PrivacyPolicy";
 import TermsOfService from "./pages/terms-of-service/TermsOfService";
 import ScrollToTop from "./components/common/ScrollToTop";
+import NotFound from "./components/Common/NotFound";
 
 const App = () => {
 	return (
@@ -18,6 +19,8 @@ const App = () => {
 				<Route path="/privacy-policy" element={<PrivacyPolicy />} />
 				<Route path="/terms-of-service" element={<TermsOfService />} />
 				<Route path="/video" element={<Video />} />
+
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
 		</Router>

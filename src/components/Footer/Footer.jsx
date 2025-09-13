@@ -68,7 +68,7 @@ const Footer = () => {
 					<ul className="flex items-center justify-center mt-8 space-x-6 sm:mt-12 sm:space-x-16 lg:mt-0">
 						<li>
 							<a
-								href="https://app.zkliquid.io/"
+								href="https://app.liquids.fi"
 								title="dApp"
 								target="_blank"
 								rel="noreferrer"
@@ -94,7 +94,7 @@ const Footer = () => {
 
 						<li>
 							<a
-								href="mailto:info@zkliquid.io"
+								href="mailto:info@liquids.fi"
 								title="Email us"
 								className="text-lg font-medium  transition-all duration-200 font-pj hover:text-gray-600"
 								target="_blank"

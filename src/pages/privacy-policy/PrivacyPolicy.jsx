@@ -2,111 +2,126 @@ import { useNavigate } from "react-router-dom";
 
 const PRIVACY_POLICY = [
 	{
-		title: "Information We Collect",
-		description:
-			"We may collect the following information when you use SocketFi:",
-		list: [
-			{
-				term: "Account Data",
-				description:
-					"Public wallet addresses, Soroban smart wallet identifiers.",
-			},
-			{
-				term: "Authentication Data",
-				description:
-					"Passkey credentials stored on your device for local authentication.",
-			},
-			{
-				term: "Transaction Data",
-				description:
-					"Details of transactions you approve through SocketFi (transaction hash, contract ID, signatures).",
-			},
-			{
-				term: "Optional Data",
-				description:
-					"Linked social accounts (email, Twitter, Telegram, Discord). These bindings are completely optional and used only if you choose to enable them.",
-			},
-			{
-				term: "KYC Data",
-				description:
-					"Required only if you request account recovery or if regulations require it.",
-			},
-		],
-		footer:
-			"We do not collect or store your private keys. Private keys remain encrypted within independent, isolated signer nodes or securely stored on your device.",
-	},
-	{
-		title: "How We Use Your Information",
+		title: "Non-Custodial Design",
 		description: null,
 		list: [
 			{
-				text: "To provide access to dApps within the Soroban and Stellar ecosystem.",
+				text: "LiquidsFi is a non-custodial protocol. Users connect through external wallets to access our services.",
 			},
 			{
-				text: "To authenticate and authorize transactions through BLS-12 on-chain verification.",
+				text: "We do not request, store, or gain access to your private keys, seed phrases, or other sensitive wallet credentials.",
 			},
-			{
-				text: "To enable optional social profile binding and humanized sharing links.",
-			},
-			{
-				text: "To support social-based recovery requests (with KYC requirements).",
-			},
-			{ text: "To maintain platform security and prevent fraud." },
 		],
-		footer: null,
 	},
 	{
-		title: "Data Sharing",
+		title: "Information We Do Not Collect",
 		description: null,
 		list: [
 			{
-				text: "We do not sell or share your personal information with third parties.",
+				text: "We do not collect or store personally identifiable information (PII) such as names, emails, addresses, or phone numbers when you use the Platform.",
 			},
 			{
-				text: "Linked social accounts are used strictly for optional account binding and recovery purposes.",
-			},
-			{
-				text: "Data may only be disclosed if required by law, regulation, or court order.",
+				text: "We do not have access to or custody of user funds.",
 			},
 		],
-		footer: null,
+	},
+	{
+		title: "Information We May Collect",
+		description: null,
+		list: [
+			{
+				term: "Blockchain Data",
+				description:
+					"Interactions with the Platform may be publicly recorded on supported blockchains. This includes wallet addresses, transaction history, and asset balances viewable on-chain.",
+			},
+			{
+				term: "Technical Data",
+				description:
+					"We may collect limited technical data (e.g., IP address, device type, browser information) through analytics tools to improve platform performance and security.",
+			},
+			{
+				term: "Cookies",
+				description:
+					"We may use cookies or similar technologies for website functionality and analytics.",
+			},
+		],
+	},
+	{
+		title: "How We Use Data",
+		description: null,
+		list: [
+			{ text: "To operate and improve the Platform." },
+			{
+				text: "To provide security, prevent misuse, and protect against fraud.",
+			},
+			{ text: "To analyze usage patterns for protocol improvements." },
+		],
+	},
+	{
+		title: "How We Share Data",
+		description: null,
+		list: [
+			{
+				text: "We do not sell, rent, or trade user data.",
+			},
+			{
+				text: "Limited aggregated or anonymized data may be shared for analytics, research, or ecosystem reporting.",
+			},
+			{
+				text: "If required by law, we may share information to comply with legal obligations.",
+			},
+		],
+	},
+	{
+		title: "Third-Party Services",
+		description: null,
+		list: [
+			{
+				text: "Wallet providers (e.g., MetaMask, Freighter, etc.) are independent services. Their use is governed by their own terms and privacy policies.",
+			},
+			{
+				text: "We are not responsible for how third-party services handle your data.",
+			},
+		],
 	},
 	{
 		title: "Security",
 		description: null,
 		list: [
-			{ text: "All transactions require passkey-based approval." },
-			{ text: "Private keys are encrypted and isolated across signer nodes." },
 			{
-				text: "Aggregated BLS signatures are generated only after successful multi-node authentication.",
+				text: "LiquidsFi implements reasonable safeguards, but blockchain interactions are inherently transparent and irreversible.",
 			},
 			{
-				text: "We enforce strict verification (including KYC when applicable) before recovery or binding requests are approved.",
+				text: "Users are solely responsible for protecting their wallet credentials.",
 			},
 		],
-		footer: null,
 	},
 	{
 		title: "Your Rights",
 		description: null,
 		list: [
 			{
-				term: "Access & Update",
-				description:
-					"You may access and update your account and optional social bindings at any time.",
-			},
-			{
-				term: "Unlinking",
-				description:
-					"You may unlink social accounts at any time with no impact on wallet functionality.",
-			},
-			{
-				term: "Data Deletion",
-				description:
-					"You may request deletion of account-binding data by contacting support.",
+				text: "Depending on your jurisdiction, you may have rights to request access, correction, or deletion of certain data we collect. Please contact us at info@liquids.fi for such requests.",
 			},
 		],
-		footer: null,
+	},
+	{
+		title: "International Use",
+		description: null,
+		list: [
+			{
+				text: "By accessing LiquidsFi, you understand that your data may be processed in jurisdictions with different data protection standards than your own.",
+			},
+		],
+	},
+	{
+		title: "Updates to Privacy Policy",
+		description: null,
+		list: [
+			{
+				text: "We may update this Privacy Policy periodically. Changes will be posted with an updated effective date.",
+			},
+		],
 	},
 ];
 
@@ -129,16 +144,16 @@ function PrivacyPolicy() {
 							Privacy Policy
 						</h2>
 						<p className="font-light md:text-[24px] text-[18px]">
-							Last updated September 12, 2025
+							Last updated August 1st, 2025
 						</p>
 					</div>
 
 					<div className="md:text-[18px] space-y-6 text-justify">
 						<p>
-							SocketFi (“we,” “our,” or “us”) is committed to protecting your
-							privacy. This Privacy Policy explains how we collect, use, and
-							safeguard your information when you use our smart wallet and
-							decentralized access platform (“SocketFi App”).
+							LiquidsFi (“we,” “our,” “us”) values your privacy. This Privacy
+							Policy explains how we handle user information when you access or
+							use our website, applications, or services (collectively, the
+							“Platform”).
 						</p>
 
 						<ol className="list-decimal space-y-8 pl-4">

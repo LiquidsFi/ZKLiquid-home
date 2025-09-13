@@ -1,86 +1,119 @@
 import { useNavigate } from "react-router-dom";
 
-const TERMS_OF_CONDITIONS = [
+const TERMS_OF_SERVICE = [
 	{
-		title: "Acceptance of Terms",
-		description:
-			"By creating an account or using SocketFi, you agree to these Terms, our Privacy Policy, and all applicable laws.",
-		list: [],
-		footer: null,
-	},
-	{
-		title: "Services Provided",
+		title: "Eligibility",
 		description: null,
 		list: [
 			{
-				text: "SocketFi provides Soroban-based smart wallets with on-chain authentication using BLS-12 signatures.",
+				text: "You must be at least 18 years old to use the Platform.",
 			},
 			{
-				text: "Users may access decentralized applications (dApps) within the Soroban and Stellar ecosystem.",
-			},
-			{
-				text: "Social profile binding (email, Twitter, Telegram, Discord) is entirely optional and not required for wallet functionality.",
+				text: "You represent that your use complies with all applicable laws and regulations.",
 			},
 		],
-		footer: null,
 	},
 	{
-		title: "Wallet Security",
+		title: "Non-Custodial Platform",
 		description: null,
 		list: [
 			{
-				text: "Private keys are encrypted and stored only in independent signer nodes or your local device.",
+				text: "LiquidsFi does not store, manage, or have access to your private keys or funds.",
 			},
-			{ text: "SocketFi does not have direct access to user private keys." },
 			{
-				text: "You are responsible for securing your device and passkey credentials.",
+				text: "All transactions are executed solely through your external wallet, and you are solely responsible for safeguarding your credentials.",
 			},
 		],
-		footer: null,
 	},
 	{
-		title: "Transaction Authorization",
-		description: null,
-		list: [
-			{ text: "All transactions require explicit user approval via passkey." },
-			{
-				text: "SocketFi servers coordinate with signer nodes to aggregate BLS signatures for on-chain verification.",
-			},
-			{ text: "Once submitted, transactions are irreversible and final." },
-		],
-		footer: null,
-	},
-	{
-		title: "Social Account Binding & Recovery",
+		title: "Use of the Platform",
 		description: null,
 		list: [
 			{
-				text: "Binding social accounts is optional and only provides added convenience (humanized links, recovery options).",
+				text: "You agree not to use the Platform to:",
 			},
 			{
-				text: "Recovery requests may require additional verification, including KYC checks.",
+				text: "Engage in unlawful, fraudulent, or abusive activity.",
 			},
 			{
-				text: "SocketFi reserves the right to reject recovery requests that do not pass verification.",
+				text: "Violate intellectual property rights.",
+			},
+			{
+				text: "Interfere with or attempt to compromise security.",
 			},
 		],
-		footer: null,
 	},
 	{
-		title: "User Responsibilities",
+		title: "No Financial Advice",
 		description: null,
 		list: [
 			{
-				text: "You agree not to use SocketFi for illegal or fraudulent purposes.",
+				text: "LiquidsFi does not provide investment, financial, or legal advice.",
 			},
 			{
-				text: "You are responsible for all activity under your account and wallet.",
-			},
-			{
-				text: "You must comply with applicable laws in your jurisdiction regarding digital assets and decentralized applications.",
+				text: "All use of the Platform is at your own risk.",
 			},
 		],
-		footer: null,
+	},
+	{
+		title: "Risks",
+		description: null,
+		list: [
+			{
+				text: "Interacting with blockchain networks involves inherent risks, including but not limited to smart contract vulnerabilities, network congestion, malicious attacks, and loss of digital assets.",
+			},
+			{
+				text: "You acknowledge and accept these risks before using the Platform.",
+			},
+		],
+	},
+	{
+		title: "Fees",
+		description: null,
+		list: [
+			{
+				text: "LiquidsFi may charge fees for certain transactions. Fees are disclosed prior to confirmation and may be updated at any time.",
+			},
+		],
+	},
+	{
+		title: "Disclaimer of Warranties",
+		description: null,
+		list: [
+			{
+				text: "The Platform is provided “as is” and “as available.”",
+			},
+			{
+				text: "We disclaim all warranties, express or implied, including fitness for a particular purpose, merchantability, and non-infringement.",
+			},
+		],
+	},
+	{
+		title: "Limitation of Liability",
+		description: null,
+		list: [
+			{
+				text: "To the maximum extent permitted by law, LiquidsFi and its contributors shall not be liable for any indirect, incidental, or consequential damages, including but not limited to loss of funds, profits, or data.",
+			},
+		],
+	},
+	{
+		title: "Indemnification",
+		description: null,
+		list: [
+			{
+				text: "You agree to indemnify and hold harmless LiquidsFi, its team, and contributors from any claims, damages, or expenses arising from your use of the Platform or violation of these Terms.",
+			},
+		],
+	},
+	{
+		title: "Changes to Terms",
+		description: null,
+		list: [
+			{
+				text: "We may update these Terms periodically. Continued use of the Platform after updates constitutes acceptance of the new Terms.",
+			},
+		],
 	},
 ];
 
@@ -103,19 +136,19 @@ function TermsOfService() {
 							Terms of Service
 						</h2>
 						<p className="font-light md:text-[24px] text-[18px]">
-							Last updated September 12, 2025
+							Last updated August 1st, 2025
 						</p>
 					</div>
 
 					<div className="md:text-[18px] space-y-6 text-justify">
 						<p>
-							Welcome to SocketFi! By accessing or using our smart wallet and
-							platform, you agree to the following Terms & Conditions. Please
-							read them carefully.
+							These Terms of Use (“Terms”) govern your access to and use of
+							LiquidsFi (“the Platform”). By using the Platform, you agree to
+							these Terms.
 						</p>
 
 						<ol className="list-decimal space-y-8 pl-4">
-							{TERMS_OF_CONDITIONS.map((section, index) => (
+							{TERMS_OF_SERVICE.map((section, index) => (
 								<li key={index}>
 									<h3 className="font-semibold mb-2 text-[20px] md:text-[24px]">
 										{section.title}
